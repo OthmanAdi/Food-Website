@@ -1,3 +1,4 @@
+import React from "react";
 import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
 import MenuCategories from "./components/MenuCategories";
@@ -8,17 +9,19 @@ import Footer from "./components/Footer";
 import "./App.css";
 
 function App() {
-  return (
-    <div className="App">
-      <Header />
-      <HeroSection />
-      <MenuCategories />
-      <SpecialDishes />
-      <Testimonials />
-      <Services />
-      <Footer />
-    </div>
-  );
+    return (
+        <div className="App">
+            <Header />
+            <main className="main-content">
+                <HeroSection />
+                <MenuCategories />
+                <SpecialDishes />
+                <Testimonials />
+                <Services />
+            </main>
+            <Footer />
+        </div>
+    );
 }
 
 export default App;
